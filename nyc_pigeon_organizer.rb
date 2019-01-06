@@ -9,7 +9,8 @@ def nyc_pigeon_organizer(data)
           else
             pigeon_list[name][data_type] << [quality]
           end
-        else pigeon_list[name] = {data_type => [quality]}
+        else
+          pigeon_list[name] = {data_type => [quality]}
         end
       end
     end
