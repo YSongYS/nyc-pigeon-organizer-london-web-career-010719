@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  return pigeons_list
+  puts pigeons_list
 end
 
 pigeon_data = {
