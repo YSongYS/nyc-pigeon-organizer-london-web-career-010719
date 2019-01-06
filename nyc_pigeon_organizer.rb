@@ -4,10 +4,10 @@ def nyc_pigeon_organizer(data)
     data.each do |quality, names|
       names.each do |name|
         if pigeon_list[name]
-          if pigeon_list[name][data_type] != nil
+          if pigeon_list[name][data_type]
             pigeon_list[name][data_type] << quality
           else
-            pigeon_list[name][data_type] << [quality]
+            pigeon_list[name][data_type] = [quality]
           end
         else
           pigeon_list[name] = {data_type => [quality]}
